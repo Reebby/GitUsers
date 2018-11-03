@@ -2,12 +2,21 @@
   "name": "git_users",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://reebby.github.io/GitUsers",
   "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.1.3",
+    "gh-pages": "^2.0.1",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
-    "react-scripts": "2.1.1"
+    "react-loading": "^2.0.3",
+    "react-pagination-custom": "^1.0.8",
+    "react-scripts": "2.1.1",
+    "reactstrap": "^6.5.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
